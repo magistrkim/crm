@@ -1,7 +1,15 @@
+import StatusLabel, { Status } from './components/ActiveLabel/StatusLabel';
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1> Home Page</h1>
+    <main className="py-10 px-10 ">
+      <h1 className="text-6xl text-red-950 mb-10"> Home Page</h1>
+      <div className='flex justify-start gap-4 cursor-pointer'>
+        <StatusLabel status={Status.Active}>Active</StatusLabel>
+        <StatusLabel status={Status.NotActive}>Not Active</StatusLabel>
+        <StatusLabel status={Status.Pending}>Pending</StatusLabel>
+        <StatusLabel status={Status.Suspended}>Suspended</StatusLabel>
+      </div>
     </main>
-  )
+  );
 }
