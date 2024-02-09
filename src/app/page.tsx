@@ -1,3 +1,5 @@
+import Button from './components/Button';
+import Input from './components/Input';
 import StatusLabel, { Status } from './components/StatusLabel';
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
         <StatusLabel status={Status.Pending}>Pending</StatusLabel>
         <StatusLabel status={Status.Suspended}>Suspended</StatusLabel>
       </div>
+      {/* <Input id={id}/> */}
+      <Button/>
     </main>
   );
 }
