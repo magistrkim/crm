@@ -1,6 +1,4 @@
-import Button from './components/Button';
-import CompanyForm from './components/CompanyForm';
-import LogoUploader from './components/LogoUploader';
+import AddCompanyButton from './components/AddCompanyButton';
 import StatusLabel, { Status } from './components/StatusLabel';
 
 export default function Home() {
@@ -13,7 +11,7 @@ export default function Home() {
         <StatusLabel status={Status.Pending}>Pending</StatusLabel>
         <StatusLabel status={Status.Suspended}>Suspended</StatusLabel>
       </div>
-      <Button/>
+      <AddCompanyButton/>
     </main>
   );
 }
