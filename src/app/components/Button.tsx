@@ -7,7 +7,7 @@ export interface ButtonProps
   disabled?: boolean;
 }
 
-const Button = ({ disabled, ...rest }: ButtonProps) => {
+const Button = ({ disabled, type, ...rest }: ButtonProps) => {
   return (
     <button
       {...rest}
